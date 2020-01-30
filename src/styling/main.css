@@ -1,0 +1,19 @@
+div.reddit {
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    overflow: scroll;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 450px;
+    padding-bottom: 0ex;
+    
+}
+
+div.news {
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    overflow: scroll;
+
+}
