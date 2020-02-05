@@ -4,6 +4,8 @@ import { Item } from 'semantic-ui-react'
 
 export default function Reddit(props) {
     return (
+        <div class="ui segments">
+            <div class="ui segment">
         <Item.Group>
         <Item>
         <Item.Content>
@@ -19,9 +21,10 @@ export default function Reddit(props) {
         </Item.Content>
         </Item>
     </Item.Group>
+    </div>
+</div>
 
     )
 }
 
   //subreddit, author, title, score, comments, url, preview
-

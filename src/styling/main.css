@@ -2,18 +2,28 @@ div.reddit {
     background-color: white;
     width: 700px;
     height: 300px;
-    overflow: scroll;
-    position: absolute;
-    margin-top: 700px;
-    margin-left: 450px;
-    padding-bottom: 0ex;
-    
+    overflow-y: scroll;
+    scrollbar-width: .1px;
 }
+
 
 div.news {
     background-color: white;
     width: 700px;
     height: 300px;
-    overflow: scroll;
+    overflow-y: scroll;
+    scrollbar-width: .1px;
+}
+
+div.note {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    overflow-wrap: inherit;
+    scrollbar-color: white;
+    scrollbar-track-color: white;
 
 }
+

@@ -6,7 +6,9 @@ import Spotify from '../componets/Spotify.js'
 import Stock from '../componets/Stock.js'
 import Weather from '../componets/Weather.js'
 import Twitter from '../componets/Twitter.js'
-import Notes from '../containers/Notes.js'
+import Notes from '../componets/Notes.js'
+import Calender from '../componets/Calender.js'
+import NotePad from '../containers/NotePad.js'
 
 
 import '../styling/main.css';
@@ -32,8 +34,11 @@ export default class MainContainer extends Component {
 
     //TWITTER API
 
+    //NOTES API
 
-
+    renderNote = () => {
+        return this.props.notes.map(note => <Notes note={note}/>)
+    }
     render() {
         return (
 
@@ -43,31 +48,25 @@ export default class MainContainer extends Component {
                 {this.renderReddit()}
             </div>
 
-            <div className = "news">
+             <div className = "news">
                 {this.renderNews()}
-            </div>
-
-            <div>
-                <SleepCycle/>
-            </div>
-
-            <div>
-                <Spotify/>
-            </div>
-
-            <div>
-                <Stock/>
-            </div>
-
-            <div>
-                <Twitter/>
-            </div>
+            </div> 
 
             <div>
                 <Weather/>
             </div>
 
-            <div><Notes/></div>
+            {/* <div className= "note">
+                {this.renderNote()}
+            </div> */}
+
+            <div>
+                <Calender/>
+            </div>
+
+            <div>
+                <NotePad/>
+            </div>
 
             </div>
 
