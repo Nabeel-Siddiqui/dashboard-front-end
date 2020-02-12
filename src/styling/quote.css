@@ -1,0 +1,6 @@
+div.quote {
+    padding: 25px;
+    text-align: justify;
+    font-style: italic;
+    display: grid;
+}

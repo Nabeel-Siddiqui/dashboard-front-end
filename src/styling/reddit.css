@@ -1,0 +1,9 @@
+ui.segment {
+    background-color: black;
+}
+
+.thumbnail {
+    width: 64px;
+    height: 56px;
+    margin: 0 10px;
+}

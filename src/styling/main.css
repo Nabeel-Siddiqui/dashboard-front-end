@@ -4,6 +4,9 @@ div.reddit {
     height: 300px;
     overflow-y: scroll;
     scrollbar-width: .1px;
+    display: center;
+    float: left;
+
 }
 
 
@@ -13,6 +16,7 @@ div.news {
     height: 300px;
     overflow-y: scroll;
     scrollbar-width: .1px;
+    display: inherit;
 }
 
 div.note {
@@ -27,3 +31,16 @@ div.note {
 
 }
 
+div.quote {
+    position: center;
+}
+
+div.quote.box {
+    position: relative;
+}
+
+
+
+
+div.reddit::-webkit-scrollbar { width: 0 !important }
+div.news::-webkit-scrollbar { width: 0 !important }
