@@ -169,11 +169,9 @@ export default class App extends Component {
         { this.loggedIn() ? 
           <MainContainer reddit={this.state.reddit} news={this.state.news} notes={this.state.notes} quote={this.state.quote}  
           token={ this.state.token } />
-          :   <Login setToken={ this.setToken }  />
+          : <Login setToken={ this.setToken }  />
         }
-          <Divider /> 
-
-          
+          <Divider />
           Footer
       </div>
     </div>

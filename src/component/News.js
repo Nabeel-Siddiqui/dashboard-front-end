@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styling/news.css'
 
 export default function News(props) {
     return (
@@ -10,7 +11,8 @@ export default function News(props) {
             </a>
             {props.news.description}
             <br/>
-            Source - {props.news.source.name}
+            <div className="source">Source - {props.news.source.name}</div>
+            
         </div>
     </div>
     )
