@@ -1,11 +1,12 @@
 ![Mission Control Demo](demo/demo.gif)
 
 Dashboard app that shows you the news feed, reddit feed, calendar, daily quote, and keep track of notes 
-Created a server side API with Rails to persists user created actions
-Implemented React to establish a front-end interface 
-Asynchronous CRUD actions 
-Utilized the use of development external APIs to create a more dynamic user experience 
-Designed UI with custom CSS, and Semantics UI React 
+
+- Created a server side API with Rails to persists user created actions
+- Implemented React to establish a front-end interface 
+- Asynchronous CRUD actions 
+- Utilized the use of development external APIs to create a more dynamic user experience 
+- Designed UI with custom CSS, and Semantics UI React 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
