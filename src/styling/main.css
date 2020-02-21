@@ -21,13 +21,12 @@ div.news {
 
 div.note {
     background-color: white;
-    width: 500px;
-    height: 200px;
-    overflow: auto;
-    scroll-behavior: smooth;
-    overflow-wrap: inherit;
-    scrollbar-color: white;
-    scrollbar-track-color: white;
+    width: 700px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: .1px;
+    display: center;
+    float: left;
 
 }
 
@@ -44,3 +43,4 @@ div.quote.box {
 
 div.reddit::-webkit-scrollbar { width: 0 !important }
 div.news::-webkit-scrollbar { width: 0 !important }
+div.notes::-webkit-scrollbar { width: 0 !important }

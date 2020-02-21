@@ -21,8 +21,10 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
+    "shortid": "^2.2.15",
     "simple-react-calendar": "^1.9.2",
-    "styled-components": "^5.0.0"
+    "styled-components": "^5.0.0",
+    "tachyons": "^4.11.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -7,3 +7,6 @@ ui.segment {
     height: 56px;
     margin: 0 10px;
 }
+div.upvote {
+    color:orangered;
+}

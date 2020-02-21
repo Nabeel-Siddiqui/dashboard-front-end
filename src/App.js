@@ -10,7 +10,8 @@ import Login from './component/Login.js'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Header, Icon, Divider, Segment } from 'semantic-ui-react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button'
+import './index.css';
+
 
 export default class App extends Component {
   
@@ -129,9 +130,9 @@ export default class App extends Component {
       
     fetch(`http://localhost:3000/notes`)
     .then(resp => resp.json())
-    .then(notesArray => 
+    .then(notes => 
       this.setState({
-        notes: notesArray
+        notes: notes
       }))
     
     fetch(`http://localhost:3000/preferences`)
@@ -150,8 +151,6 @@ export default class App extends Component {
         })
       }
 
-    
-
 
   render() {
     return (
@@ -161,18 +160,16 @@ export default class App extends Component {
         <Header as='h1'>
           <Icon name='rocket' />
           <Header.Content>Mission Control</Header.Content>
-          {this.loggedIn() ?  <Button className="login.button" variant="dark"onClick={ this.logOutClick }>Log Out</Button> 
-                : "" }
+          {this.loggedIn() ?  <button className="logout" onClick={ this.logOutClick }>Log Out</button> : "" }
           
         </Header>
         <Divider />
         { this.loggedIn() ? 
-          <MainContainer reddit={this.state.reddit} news={this.state.news} notes={this.state.notes} quote={this.state.quote}  
+          <MainContainer reddit={this.state.reddit }news={this.state.news} quote={this.state.quote} note={this.state.notes}
           token={ this.state.token } />
           : <Login setToken={ this.setToken }  />
         }
-          <Divider />
-          Footer
+        <Divider />
       </div>
     </div>
     )
@@ -182,7 +179,6 @@ export default class App extends Component {
   // <Route exact path="/" render={props => <Login handleLoginSubmit={this.handleLoginSubmit}/>}/> 
   // <NavBar/> 
   {/* <Route path="/" component={Signup}/> */}
-
   // <Route exact path="/main" render={props => <MainContainer {...props} reddit={this.state.reddit} news={this.state.news} notes={this.state.notes} quote={this.state.quote} />} />
   // <Route path="/notepad" component={NotePad}/>
 
@@ -202,3 +198,4 @@ export default class App extends Component {
 
 
 
+  

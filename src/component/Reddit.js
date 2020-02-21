@@ -8,7 +8,8 @@ export default function Reddit(props) {
             <div className="ui segment">
                 <Item.Group>
                     <Item>
-                        <img className="ui avatar image" alt="reddit" src={props.reddit.thumbnail} height="175" width="175"></img> 
+                        {props.reddit.thumbnail.includes("http") &&
+                        <img className="ui avatar image" alt="reddit" src={ props.reddit.thumbnail } height="175" width="175"></img> }
                             <br/>
                                 <Item.Content>
                                     <a href={props.reddit.url}>
@@ -16,9 +17,9 @@ export default function Reddit(props) {
                                     </a>
                                         <Item.Meta>Subreddit - r/{props.reddit.subreddit}</Item.Meta>
                                         <Item.Description>
-                                        Posted by - u/{props.reddit.author} <br/>
+                                        Posted By - u/{props.reddit.author} <br/>
                                         Comments - {props.reddit.num_comments} <br/>
-                                        Votes - {props.reddit.score}<br/>
+                                        <div className="upvote">Upvotes - {props.reddit.score}</div>
                                         </Item.Description>
                                 </Item.Content>
                     </Item>

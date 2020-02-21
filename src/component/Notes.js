@@ -1,11 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Item } from 'semantic-ui-react'
 
-export default function Notes() {
+export default function Notes(props) {
     return (
-        <div>
-            
+        <div class="ui equal width stretched grid">
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui checkbox">
+                        <input type="checkbox"/>
+                        <label>{props.note.text_content}</label>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
+
+
+
 

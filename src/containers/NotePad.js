@@ -1,26 +1,26 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-export default class NotePad extends Component {
-
-
-    state = {
-        title: "",
-        text_content: ""
-    }
+// export default class NotePad extends Component {
 
 
+//     state = {
+//         title: "",
+//         text_content: ""
+//     }
 
-    render() {
-        return (
-            <div>
-                <h2>
-                {this.props.notes.title}
-                {this.props.notes.text_content}
-                </h2>
-            </div>
-        )
-    }
-}
+
+
+//     render() {
+//         return (
+//             <div>
+//                 <h2>
+//                 {this.props.notes.title}
+//                 {this.props.notes.text_content}
+//                 </h2>
+//             </div>
+//         )
+//     }
+// }
 
 {/* <h3>Create Note</h3>
 <form onSubmit={null}>
