@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Reddit from '../component/Reddit.js'
 import News from '../component/News.js'
 import SleepCycle from '../component/SleepCycle.js'
 import Spotify from '../component/Spotify.js'
 import Stock from '../component/Stock.js'
 import Twitter from '../component/Twitter.js'
+
+import Weather from '../component/Weather.js'
 
 import Calendar from 'react-calendar'
 import Quote from '../component/Quote.js'
@@ -20,7 +22,13 @@ import '../styling/main.css';
 
 import { Grid, Segment,Icon } from 'semantic-ui-react'
 
+const api = {
+    key: "23259d09329083a1e35362d821a07a3b",
+    base: "https://api.openweathermap.org/data/2.5"
+}
+
 export default class MainContainer extends Component {
+
 
     state = {
         text_content: ""
@@ -53,6 +61,7 @@ export default class MainContainer extends Component {
         return this.props.note.map(note => <Notes note={note}/>)
     }
     //WEATHER API
+    
 
     //STOCK API
 
@@ -132,9 +141,10 @@ export default class MainContainer extends Component {
                             {this.renderReddit()}
                         </div> 
                     </Grid.Column>
-                    {/* <Grid.Column width={3}>
+                    <Grid.Column width={3}>
                     <h2>WEATHER <Icon name='sun icon' /></h2>
-                    </Grid.Column> */}
+                        <Weather/>
+                    </Grid.Column>
                 </Grid.Row>
             </Grid>
         </div>

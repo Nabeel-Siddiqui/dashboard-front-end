@@ -1,4 +1,3 @@
-import './App.css';
 import React, { Component } from 'react';
 import MainContainer from './containers/MainContainer.js';
 import Preferences from './containers/Preferences.js'
@@ -115,10 +114,10 @@ export default class App extends Component {
         quote: quoteObj.contents.quotes
       }))
 
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=new york&units=imperial&APPID=8769a3625904e3f7eb61d9cfb35c4599`)
-      .then(resp => resp.json())
-      .then(json_resp => 
-        console.log(json_resp))
+      // fetch(`http://api.openweathermap.org/data/2.5/weather?q=newyork&units=imperial&APPID=8769a3625904e3f7eb61d9cfb35c4599`)
+      // .then(resp => resp.json())
+      // .then(json_resp => 
+      //   console.log(json_resp))
         
       // Local APIs
     fetch(`http://localhost:3000/users`)
