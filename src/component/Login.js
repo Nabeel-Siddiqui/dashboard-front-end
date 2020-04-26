@@ -59,7 +59,7 @@ export default class Login extends Component {
           ? <>
           <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
             <h2>Log In</h2>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+            <a >
             {/* onClick={ () => this.setState({ logIn: false }) } */}
             I need to register!!!</a>
             <form className ="pa4 black-80 measure center" onSubmit={ this.logInSubmitted }>
