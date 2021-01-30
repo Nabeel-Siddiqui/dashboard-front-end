@@ -25,12 +25,12 @@ Backend
 
 Backend Installation
 * Fork or clone Backend ```git clone https://github.com/Nabeel-Siddiqui/dashboard-back-end```
-* ```cd``` to ```pokedex-backend```
+* ```cd``` to ```dashboard-back-end```
 * run ```bundle i && rails s``` 
 
 Frontend Installation
 * Fork or clone this repo ```git clone https://github.com/Nabeel-Siddiqui/dashboard-front-end```
-* ```cd``` to ```pokedex```
+* ```cd``` to ```dashboard-front-end```
 * run ```npm i && npm start``` 
 
 ## Contact
